@@ -355,7 +355,8 @@ function displayBanner() {
 // Updated getUserChoice function to include the banner
 function getUserChoice() {
     return new Promise((resolve) => {
-        console.log('\n===== OPEN SCI AUTO BOT | AIRDROP INSIDERS =====');
+        displayBanner(); // Add the "ADD NODE" banner here
+        console.log('===== OPEN SCI AUTO BOT | ADB NODE =====');
         console.log('Please select an operation:');
         console.log('1) Claim tokens from faucet');
         console.log('2) Vote on projects');
