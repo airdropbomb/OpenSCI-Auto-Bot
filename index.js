@@ -339,7 +339,20 @@ const rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout
 });
+// Function to display the "ADD NODE" ASCII banner
+function displayBanner() {
+    const banner = `
+ █████╗ ██████╗ ██████╗     ███╗   ██╗ ██████╗ ██████╗ ███████╗
+██╔══██╗██╔══██╗██╔══██╗    ████╗  ██║██╔═══██╗██╔══██╗██╔════╝
+███████║██║  ██║██████╔╝    ██╔██╗ ██║██║   ██║██║  ██║█████╗  
+██╔══██║██║  ██║██╔══██╗    ██║╚██╗██║██║   ██║██║  ██║██╔══╝  
+██║  ██║██████╔╝██████╔╝    ██║ ╚████║╚██████╔╝██████╔╝███████╗
+╚═╝  ╚═╝╚═════╝ ╚═════╝     ╚═╝  ╚═══╝ ╚═════╝ ╚═════╝ ╚══════╝   
+    `;
+    console.log(banner);
+}
 
+// Updated getUserChoice function to include the banner
 function getUserChoice() {
     return new Promise((resolve) => {
         console.log('\n===== OPEN SCI AUTO BOT | AIRDROP INSIDERS =====');
